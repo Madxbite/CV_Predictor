@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+h2{
+    color:#000000;
+    text-align: center;
+    padding:20px;
+}
+label{
+    color:#000000;
+    padding-left:20px;
+}
+
+.Form{
+    background-color:#ffffff;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+body{
+    background-color:#D4D4D4;
+}
+input[type="submit"]{
+     width: 30%;
+    appearance: none;
+    padding:10px;
+    border:none;
+    
+ 
+    color:#ffffff;
+    background-color: #0167B8;
+
+}
+
+
+
+input[type="submit"]:hover{
+    background-color: rgba(0,130,160,0.8);
+}
+input{
+    background-color: white;
+}
+input[type="file"]{
+    padding:10px;
+    margin:10px 0;
+    border:0;
+
+    border-radius:10px;
+  
+    box-sizing: border-box;
+    width:100%;
+
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

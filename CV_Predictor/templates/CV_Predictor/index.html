@@ -1,0 +1,45 @@
+{% load static %}   
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CV Predictor FrontRunner</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="{% static 'CV_Predictor/styles.css' %}">
+       
+
+       
+        
+    </head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="Form">
+                
+                <h2>Upload</h2>
+                
+                <form action="{% url 'CV_Predictor:index' %}" method="post">
+                    {% csrf_token %}
+           
+                    {{ form }}
+                        
+                    <!-- <div class="Submit"><button type="submit" >Submit</button></div> -->
+                    <input type="submit">
+            
+                </form>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>     
+    </div>
+
+   
+    
+</body>
+</html>
